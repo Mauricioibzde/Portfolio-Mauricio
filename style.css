@@ -765,7 +765,6 @@ strong {
 
 /*FOOTER*/
 
-   
 @media (max-width: 768px) {
 
 
@@ -796,7 +795,7 @@ strong {
         font-size: 40px;
       }
 
-      .web-developer {
+      .web-developer, .graphic-dancer {
         position: relative;
         display: inline; 
         font-size:12px;
@@ -811,19 +810,18 @@ strong {
     }
 
     .biografia p {
-        width: 80vw;
-        text-align: justify;
+        width: 300px;
     }
 
 
 
-
+ 
 .content-02 {
    display: flex;
    flex-direction: column;
    background-color: transparent;
    position: relative;
-   top: 200px;
+   top: 20px;
 }
 
 .all-item-01 {
@@ -836,12 +834,11 @@ strong {
 }
 
 .all-item-02 {
-    width: 100%;
-    height: 500px;
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 500px;
     gap: 10px;
     
 
