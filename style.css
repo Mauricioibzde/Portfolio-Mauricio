@@ -13,7 +13,7 @@ html, body {
     scroll-behavior: smooth;
   }
 /*MENU*/
-h1 {
+h1 , a {
     font-family: "Orbitron", sans-serif;
 }
 
@@ -21,6 +21,8 @@ p {
     font-family: "Inter", sans-serif;
 
 }
+
+
 
 button {
     font-family: "Oswald", sans-serif;
@@ -44,13 +46,17 @@ button {
 .sidebar {
     position: fixed;
     top: 0;
-    right: -300px; /* Posiciona o menu fora da tela à direita */
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(to bottom, #190cc9, rgba(1, 11, 27, 0.103));
+    right: -600px; /* Posiciona o menu fora da tela à direita */
+    width: 100%;
+    height: 100%;
+    background-color: #131220;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     transition: right 0.3s ease; /* Suaviza a transição do menu */
     z-index: 3; /* Garante que o menu fique acima do conteúdo principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     
 }
 
@@ -815,6 +821,8 @@ strong {
 
 
     .content-01 {
+        position: relative;
+        top: 25vh;
 
     }
 
@@ -831,7 +839,7 @@ strong {
    flex-direction: column;
    background-color: transparent;
    position: relative;
-   top: 20px;
+   top: 30vh;
 }
 
 .all-item-01 {
