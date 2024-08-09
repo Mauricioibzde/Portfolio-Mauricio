@@ -3,58 +3,24 @@
     padding: 0;
     
 }
-
 html, body {
     width: 100%;
     height: 100%;
     margin: 0; 
     padding: 0; 
     color: white;
-  background-color: #131220;
-    background-repeat: no-repeat; 
-    background-position: center center; 
-    background-size: cover;
+    background-color: #131220;
     scroll-behavior: smooth;
   }
-
-  body {
-    overflow-x: hidden;
-  
-  }
- 
-  
-     
-     
-
-
-h1 {
-    font-family: "Orbitron", sans-serif;
-}
-
-p {
-    font-family: "Inter", sans-serif;
-
-}
-
-button {
-    font-family: "Oswald", sans-serif;
-}
-
+/*MENU*/
 header {
     
     display: flex;
-    justify-content: center;
     width: 100%;
-    height: 60px;
-    color: aliceblue;
-    align-items: center;
-    text-transform: uppercase;
-    position: fixed;
-    background-color: #000000;
-    z-index: 5;
+    height: 100px; 
+   
     
 }
-
 header .menu-header {
     
     width: 100%;
@@ -63,12 +29,7 @@ header .menu-header {
     height: 100px;
     font-size: 10px;
     gap: 20px;
-   
-   
- 
     
-
-
 }
 
 header .menu-header ul {
@@ -79,17 +40,7 @@ header .menu-header ul {
     gap: 10%;
     align-items: center;
     font-family: "Orbitron", sans-serif;
-    
-    
-
 }
-
-header .menu-header ul li span {
-    padding-left: 2px;
-}
-
-
-
 header ul li a {
     text-decoration: none;
     list-style-type: none;
@@ -100,78 +51,13 @@ header ul li a:hover {
 
 
     color: #1504ff;
-    transition: 0.7s;
-    
-    
-}
-
-
-
-/*MENU ON THE RIGHT*/
-
-
-
-/*MENU ON THE RIGHT*/
-
-
-
-#toggle-button {
-    position: fixed;
-    right: 20px;
-    z-index: 1000;
-    background-color:transparent;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 24px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -300px; /* Posiciona o menu fora da tela à direita */
-    width: 300px;
-    height: 100%;
-    background-color: #444;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    transition: right 0.3s ease; /* Suaviza a transição do menu */
-    z-index: 3; /* Garante que o menu fique acima do conteúdo principal */
+    transition: 0.7s; 
     
 }
-
-.sidebar.open {
-    right: 0; /* Quando aberto, o menu é trazido para a tela */
-}
-
-.menu-section {
-    padding: 20px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li {
-    margin-bottom: 20px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    display: block;
-}
-
-.menu li a:hover {
-    text-decoration: underline;
-}
+/*MENU*/
 
 
-
+/*CONTENT-00*/
 .content-00 {
     width: 100%;
     height: 100%;
@@ -179,234 +65,96 @@ header ul li a:hover {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, #190cc9, rgba(1, 11, 27, 0.103));
-     background-color: #1e90ff;
-   
-
-}
-
-.background-photo {
-    position: absolute;
-    right: 60%;
-   overflow: hidden;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    background-color: #1312209d;
-    box-shadow: 16px 16px rgba(0, 0, 0, 0.742);
-   
-}
-.background-photo img {
-    position: relative;
-    left: 5%;
-    top: 15%;
-    width: 45%;
-    height: auto;
-    object-fit: cover;
-    left: 250px;
+    overflow-x: hidden;
 }
 
 .title {
     font-family: "Orbitron", sans-serif;
-    font-size: 24px;
     color: #ffffff;
     line-height: 1.4;
     white-space: nowrap; /* Previne quebra de linha */
     overflow: hidden; /* Esconde o texto que está fora do contêiner */
     border-right: 0; /* Remove o efeito do cursor de digitação */
-    width: 0; /* Inicialmente a largura é 0 */
     animation: typing 4s steps(40, end) forwards; /* Ajuste o número de steps conforme necessário */
     text-align: center;
-    font-size: 60px;
-    z-index: 4;
+    font-size: 40px;
 }
 
-.download {
-  position: absolute;
-  width: 150px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.download h1  {
-    font-size: 16px;
-    text-align: center;
-    position: relative;
-    bottom: 4px;
-}
-
-/* Animação de digitação */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-/* Define os estilos para as diferentes partes do texto */
 .web-developer, .graphic-dancer {
     position: relative;
     display: inline; /* Garante que o texto não quebre */
     font-size:12px ;
     position: relative;
-    bottom: 40px;
-}
-
-
-
-.button-content-00 {
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute; /* Necessário para a animação */
     
-    transition: transform 0.3s ease; /* Adicionando transição suave para rotação */
-    left: 50%;
 }
 
-.button-content-00 img {
-    width: 24px; /* Ajuste conforme necessário */
-    height: 24px; /* Ajuste conforme necessário */
-}
+/*CONTENT-00*/
 
-/* Classe para animação de bounce */
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.animate-bounce {
-    animation: bounce 1s infinite;
-}
-
-/* Classe para rotação de 0 graus quando o mouse está sobre a seta */
-.rotate-0 {
-    transform: rotate(0deg);
-}
-
-
-
-.content-00 .title {
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-/*CORREL*/
-
-
-
-/*CORREL*/
-
-.content-00 .rodape {
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to right, hsl(199, 87%, 12%), rgb(1, 11, 27));
-    bottom: 0;
-}
-
-
+/*CONTENT-01*/
 
 .content-01 {
+  
     width: 100%;
     height: 100%;
     display:flex ;
     justify-content: center;
     align-items:center ;
-    position: relative;
     
 }
 
 .biografia {
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 80%;
+    height: 100px;
     position: relative;
-    left: -100%;
-    transition: left 1s ease-in-out, opacity 1s ease-in-out;
-    opacity: 0;
-    text-align: center;
+    text-align: justify;
 }
 
+/*CONTENT-01*/
 
-.biografia.active {
-    left: 0;
-    opacity: 1;
-}
-
-
-
-
-
-.content-01  .item h1 {
-    position: absolute;
-}
-
-
-
- /* CHAT*/
-
-
-
-/* CHAT*/
-
+/*CONTENT-02*/
 
 .content-02 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-}
-
-.content-03 {
-    width: 100%;
-    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: aliceblue;
-    gap: 20px;
-    background: linear-gradient(to top, #000000, rgba(1, 11, 27, 0.103));
-}
-
-.item-01-pg-03 {
-   
-    display: flex;
+    grid-template-columns: 1fr 1fr; 
+    height: 100vh; 
+    width: 100%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #1504ff;
    
-    background: #130b87;
-    box-shadow: 0 16px #0000008e;
-
-    
+   
 }
 
-.item-02-pg-03 {
+.title-content-02 {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-   background: #130b87;
-   box-shadow: 0 16px #0000008e;
-    
+    position: absolute;
+    gap: 50vw;
+    box-sizing: border-box;  
+}
+
+.skills {
+    position: relative;
+   left: 90px;
+}
+
+.experiences {
+    position: relative;
+    right: 50px;
+}
+
+/*ITEM01*/
+
+.all-item-01 {
+    position: relative;
+    bottom: 10%;
 }
 
 .item-01-pg-03 h1 {
@@ -420,34 +168,30 @@ header ul li a:hover {
 
 
 
-
-
-
-.item-02-pg-03 .description-01-pg-03 {
-    position: relative;
-    font-family: "Inter", sans-serif;
-    top: 10px;
-   
-
+.item-01-pg-03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #130b87;
+    height: 100vh; 
 }
 
-.item-02-pg-03 .description-02-pg-03 {
+.description-02-pg-03 {
     position: relative;
-    font-family: "Inter", sans-serif;
-    top: 70px;
-
+    top: 80px;
 }
-
 
 /*btn*/
 
-  .animated-button {
+.animated-button {
     background: linear-gradient(-30deg, #120b3d 50%, #130b87 50%);
     padding: 10px 20px;
     margin: 12px;
     display: inline-block;
     -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
     overflow: hidden;
     color: #f7d4d4;
     font-size: 20px;
@@ -456,275 +200,148 @@ header ul li a:hover {
     text-transform: uppercase;
     text-decoration: none;
     -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            position: relative;
-            font-family: "Orbitron", sans-serif;
-            top: 15px;
-            
-  }
-
-  .btn-bottom {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     position: relative;
-    top: 75px;
-  }
-  
-  .animated-button::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #432b98;
-    opacity: 0;
-    -webkit-transition: .2s opacity ease-in-out;
-    transition: .2s opacity ease-in-out;
-  }
-  
-  .animated-button:hover::before {
-    opacity: 0.2;
-  }
-  
-  .animated-button span {
-    position: absolute;
-  }
-  
-  .animated-button span:nth-child(1) {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-   background-color: white;
-    -webkit-animation: 2s animateTop linear infinite;
-            animation: 2s animateTop linear infinite;
-  }
-  
-  @keyframes animateTop {
-    0% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-  }
-  
-  .animated-button span:nth-child(2) {
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 2px;
-    background-color: white;
-    -webkit-animation: 2s animateRight linear -1s infinite;
-            animation: 2s animateRight linear -1s infinite;
-  }
-  
-  @keyframes animateRight {
-    0% {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%);
-    }
-    100% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-  }
-  
-  .animated-button span:nth-child(3) {
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    -webkit-animation: 2s animateBottom linear infinite;
-            animation: 2s animateBottom linear infinite;
-  }
-  
-  @keyframes animateBottom {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-  }
-  
-  .animated-button span:nth-child(4) {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 2px;
-    background-color: white;
-    -webkit-animation: 2s animateLeft linear -1s infinite;
-            animation: 2s animateLeft linear -1s infinite;
-  }
-  
-  @keyframes animateLeft {
-    0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%);
-    }
-  }
-  
+    font-family: "Orbitron", sans-serif;
+    top: 20px;
+}
 
-  
-  
+.btn-bottom {
+  position: relative;
+  top: 120px;
+}
 
-/*btn*/
+.animated-button::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #432b98;
+  opacity: 0;
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
+}
 
-.content-04 {
-    width: 100%;
-    height: 100%;
+.animated-button:hover::before {
+  opacity: 0.2;
+}
+
+.animated-button span {
+  position: absolute;
+}
+
+.animated-button span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+ background-color: white;
+  -webkit-animation: 2s animateTop linear infinite;
+          animation: 2s animateTop linear infinite;
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.animated-button span:nth-child(2) {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  -webkit-animation: 2s animateRight linear -1s infinite;
+          animation: 2s animateRight linear -1s infinite;
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+.animated-button span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  -webkit-animation: 2s animateBottom linear infinite;
+          animation: 2s animateBottom linear infinite;
+}
+
+@keyframes animateBottom {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.animated-button span:nth-child(4) {
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  -webkit-animation: 2s animateLeft linear -1s infinite;
+          animation: 2s animateLeft linear -1s infinite;
+}
+
+@keyframes animateLeft {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+/*ITEM01*/
+
+/*ITEM02*/
+
+.item-02-pg-03 {
+  
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
-}
-
-.content-04.item-pg4-01 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.content-04 .item-pg4-01 .mauricio-table {
-    width: 50%;
-}
-
-/* Estilo principal para a seção de projetos */
-#content-05 {
-    padding: 20px;
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    flex-wrap: wrap; /* Permite que os carrosséis se movam para a linha abaixo se necessário */
-}
-
-
-
-/* Estilo para a contêiner de carrosséis */
-.carousel-container, .carousel-container-02 {
-    display: flex;
-    flex-direction: column; /* Empilha o título acima do carrossel */
-    align-items: center; /* Alinha o conteúdo no centro horizontalmente */
-    margin: 0 20px; /* Espaçamento horizontal entre os carrosséis */
-}
-
-/* Estilo específico para o contêiner de carrosséis de vídeos */
-.carousel-container {
-    width: 140px; /* Ajuste conforme necessário */
-    height: auto; /* Ajuste conforme necessário */
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px; /* Espaçamento abaixo do carrossel */
-    position: absolute;
-}
-
-/* Estilo específico para o carrossel de imagens */
-.carousel-container-02 {
-    width: 250px; /* Ajuste conforme necessário */
-    height: auto; /* Ajuste conforme necessário */
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px; /* Espaçamento abaixo do carrossel */
-    border-radius: 50px;
-}
-
-/* Alinhamento específico para o carrossel da direita */
-.carousel-right {
-    margin-left: auto; /* Alinha o carrossel ao lado direito */
-}
-
-/* Estilo para o carrossel de vídeos */
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-    width: 100%; /* Garante que o carrossel ocupe toda a largura disponível */
-}
-
-.video-container {
-    min-width: 100%; /* Garante que cada vídeo ocupe a largura total do carrossel */
-    height: auto; /* Ajusta a altura do vídeo automaticamente */
-    position: relative;
-}
-
-/* Estilo para os vídeos */
-video {
-    border-radius: 30px;
-    width: 100%;
-    height: auto; /* Ajusta a altura automaticamente para manter a proporção */
-    object-fit: cover;
-}
-
-/* Estilo para o carrossel de imagens */
-.carousel-02 {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.img-container {
-    min-width: 100%; /* Garante que cada imagem ocupe a largura total do carrossel */
-    box-sizing: border-box;
-    position: relative;
-}
-
-/* Estilo para as imagens no carrossel */
-.img-container img {
-    width: 100%;
-    display: block;
-}
-
-/* Estilo para os detalhes das imagens */
-.details {
-    display: none; /* Oculta o conteúdo por padrão */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    background: rgba(0, 0, 0, 0.886); /* Fundo semi-transparente */
-    color: white;
-    padding: 10px;
-    box-sizing: border-box;
+    flex-direction: column;
     text-align: center;
+    background: #130b87;
+    height: 100vh; 
+
+    
 }
 
-.details p {
+.item-02-pg-03 h1 {
     position: relative;
-    top: 40%;
-}
-
-.img-container:hover .details {
-    display: block; /* Mostra o conteúdo quando o mouse está sobre a imagem */
+    bottom: 15%;
 }
 
 
-/* CARD02*/
 
 
 
-.content-05.item-pg5-01 ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.skills-header h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
 
 .card-container {
     display: flex;
@@ -821,34 +438,28 @@ video {
         }
 
 
+/*ITEM02*/
+
+  
+
+/*CONTENT-02*/
+
+/*CONTENT-03*/
+
+.content-03 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: linear-gradient(to top, #000000, rgba(1, 11, 27, 0.103));
+}
+
+/*CONTENT-03*/
 
 
-/*CARD POKER */
-
-/* Contêiner principal dos cards */
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*img*/
-.content-06 {
+/*CONTENT-04*/
+.content-04 {
     width: 100%;
     height: 100%;
     display: grid;
@@ -980,7 +591,8 @@ video {
     padding: 5px 2px;
 }
 
-/*img cartao*/
+/*CONTENT-04*/
+
 
 
 /*FOOTER*/
@@ -1070,277 +682,12 @@ strong {
     
 }
 
-/*FOOTER
-
-
-
-
-@media (max-width: 768px) {
-
-
-
-    * {
-        margin: 0;
-        padding: 0;
-        
-    }
-
-    header {
-        
-        background-color: #000000;
-    
-    }
-
-    header ul li {
-        display: none;
-    }
-
-
-
-    .button-content-00  {
-        position: absolute;
-        top: 70%;
-    }
-
+/*FOOTER*/
 
    
-
- 
-      
-
-    
-      .content-00 .title  {
-        font-size: 40px;
-      }
-
-    .web-developer , .graphic-dancer {
-        font-size:12px ;
-        position: relative;
-        bottom: 8px;
-    }
-
-    .biografia .about-me {
-        font-size: 1.5rem;
-    }
-
-
-
-  
-
-    .content-01 .biografia {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-    .content-01 .biografia {
-        flex-direction: column;
-    }
-
-    .item-02-pg-03 {
-        width: 100%; 
-        height: 450px;
-    }
-
-    .item-02-pg-03 h1 {
-        position: relative;
-        bottom: 25px;
-    }
-    .all-item {
-        position: relative;
-        bottom: 40px;
-    }
-
-    .item-01-pg-03 {
-        width: 100%; 
-        position: relative;
-        height: 450px;
-        top: 40px;
-       
-    }
-
-    .content-03 {
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        position: relative;
-        top: 25%;
-    }
-
    
-
-    .item-01-pg-03 h1 {
-       
-        position: relative;
-        bottom: 95px;
-    }
-
-    .card-container {
-        position: relative;
-        bottom: 5%;
-    }
-
-    .item-pg5-01 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 130px;
-    }
-    
- 
-    .content-05 {
-        position: relative;
-        top: 100%;
-    }
-
-    .card-poke {
-        position: relative;
-    }
-
-    .card-poke-all {
-        flex-direction: column-reverse;
-        gap: 20px;
-    }
-
-    .content-06 {
-        
-        .card-shadow {
-            width: 120px; /* Reduz a largura dos itens para caber melhor em telas pequenas */
-        }
-    
-        .carousel-track {
-            animation-duration: 25s; /* Ajusta a duração da animação para uma experiência suave */
-        }
-    }
-    
-    @keyframes scroll {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-50%);
-        }
-    }
-}
-
-
-    footer {
-        position: relative;
-        top: 70%;
-    }
-
  
     
-
-
-
-@media (max-width: 1200px) {
-    #toggle-button  {
-      
-        display: block;
-        position: fixed;
-    
-}
-
-}
-
-@media (max-height: 1368px) {
-    #toggle-button  {
-      
-        display: none;
-        position: fixed;
-    
-}
-
-}
-
-@media (max-height: 1368px) {
-    #toggle-button  {
-      
-        display: none;
-        position: fixed;
-    
-}
-
-header ul li {
-    display: block;
-}
-
-}
-
-
-@media (max-height: 900px) {
-    #toggle-button  {
-      
-        display: block;
-        position: fixed;
-    
-}
-
-header ul li {
-    display: none;
-}
-
-}
-
-@media (max-height: 900px) {
-    #toggle-button  {
-      
-        display: none;
-        position: fixed;
-    
-}
-
-header ul li {
-    display: block;
-}
-
-.biografia {
-     width: none;
-    position: relative;
-    left: -100%;
-    transition: left 1s ease-in-out, opacity 1s ease-in-out;
-    opacity: 0;
-    text-align: center;
-    text-align: center;
-}
-
-
-}
-
-@media (max-width: 1400px) , (max-width: 900px)   {
- 
-        
-    }
-
-    .button-content-00  {
-        position: absolute;
-        top: 70%;
-    }
-
- 
-
-    @media (max-width: 400px) , (max-width: 600px)  {
-        header ul li {
-            display: none;
-        }
-
-        #toggle-button  {
-      
-            display: block;
-            position: fixed;
-        
-    }
-
-    }
-    
-
-
-
-
-
 
 
 
