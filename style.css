@@ -812,6 +812,7 @@ strong {
 
     .biografia p {
         width: 80vw;
+        text-align: justify;
     }
 
 
