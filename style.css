@@ -796,7 +796,7 @@ strong {
         font-size: 40px;
       }
 
-      .web-developer , .graphic-dancer {
+      .web-developer {
         position: relative;
         display: inline; 
         font-size:12px;
@@ -812,7 +812,31 @@ strong {
    flex-direction: column;
    background-color: transparent;
    position: relative;
+   top: 20px;
 }
+
+.all-item-01 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.all-item-02 {
+    width: 100%;
+    height: 500px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+
+}
+
+
 
 .title-content-02 {
     display: none;
@@ -833,16 +857,24 @@ strong {
 
 .item-01-pg-03 {
     position: relative;
-    top: 40%;
+    top: 50%;
     height: 100vh;
 }
 
 .item-02-pg-03 {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    top: 42%;
+    top: 60%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-bottom {
