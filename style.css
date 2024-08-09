@@ -796,7 +796,7 @@ strong {
         font-size: 40px;
       }
 
-      .web-developer {
+      .web-developer , .graphic-dancer {
         position: relative;
         display: inline; 
         font-size:12px;
