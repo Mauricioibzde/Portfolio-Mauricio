@@ -406,7 +406,8 @@ header ul li a:hover {
 
 
 .card-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
