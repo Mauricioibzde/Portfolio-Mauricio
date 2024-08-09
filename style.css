@@ -13,7 +13,18 @@ html, body {
     scroll-behavior: smooth;
   }
 /*MENU*/
+h1 {
+    font-family: "Orbitron", sans-serif;
+}
 
+p {
+    font-family: "Inter", sans-serif;
+
+}
+
+button {
+    font-family: "Oswald", sans-serif;
+}
 /*MENU-MOBILE*/
 #toggle-button {
     position: fixed;
@@ -89,7 +100,7 @@ header .menu-header {
     display: flex;
     justify-content: center;
     height: 100px;
-    font-size: 10px;
+    font-size: 16px;
     gap: 20px;
     
 }
@@ -139,14 +150,14 @@ header ul li a:hover {
     border-right: 0; /* Remove o efeito do cursor de digitação */
     animation: typing 4s steps(40, end) forwards; /* Ajuste o número de steps conforme necessário */
     text-align: center;
-    font-size: 40px;
+    font-size: 80px;
 }
 
-.web-developer, .graphic-dancer {
+.web-developer {
     position: relative;
-    display: inline; /* Garante que o texto não quebre */
-    font-size:12px ;
-    position: relative;
+    display: inline; 
+    font-size:16px;
+    bottom: 80px;
     
 }
 
@@ -173,7 +184,12 @@ header ul li a:hover {
     width: 80%;
     height: 100px;
     position: relative;
-    text-align: justify;
+    text-align: center;
+    
+    
+}
+.biografia p {
+    padding: 20px;
 }
 
 /*CONTENT-01*/
@@ -204,11 +220,13 @@ header ul li a:hover {
 
 .skills {
     position: relative;
+    top: 20px;
    left: 90px;
 }
 
 .experiences {
     position: relative;
+    top: 20px;
     right: 50px;
 }
 
@@ -748,6 +766,123 @@ strong {
 /*FOOTER*/
 
    
+@media (max-width: 768px) {
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+
+    header {
+        
+        position: fixed;
+        background-color: #131220;
+        z-index: 2;
+    
+    }
+
+    .menu-header ul li {
+        display: none;
+    }
+    .content-00  {
+        width: 100%;
+    }
+
+    .content-00 .title  {
+        font-size: 40px;
+      }
+
+      .web-developer {
+        position: relative;
+        display: inline; 
+        font-size:12px;
+        bottom: 15px;
+        
+    }
+
+
+
+
+.content-02 {
+   display: flex;
+   flex-direction: column;
+   background-color: transparent;
+   position: relative;
+}
+
+.title-content-02 {
+    display: none;
+}
+
+
+.skills {
+    position: relative;
+    top:115vh;
+    left:0;
+}
+
+.experiences {
+    position: relative;
+   bottom: 20px;
+    right:0;
+}
+
+.item-01-pg-03 {
+    position: relative;
+    top: 40%;
+    height: 100vh;
+}
+
+.item-02-pg-03 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 42%;
+}
+
+.btn-bottom {
+    position: relative;
+    top: 13vh;
+}
+
+.content-04 {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.coming-soon {
+    z-index: 5;
+    position: absolute;
+    text-align: center;
+}
+
+.card-shadow {
+    display: none;
+}
+
+
+footer {
+    position: relative;
+    top: 100%;
+}
+}
+
+
    
  
     
