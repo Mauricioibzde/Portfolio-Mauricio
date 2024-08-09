@@ -153,7 +153,7 @@ header ul li a:hover {
     font-size: 80px;
 }
 
-.web-developer {
+.web-developer, .graphic-dancer {
     position: relative;
     display: inline; 
     font-size:16px;
@@ -810,7 +810,8 @@ strong {
     }
 
     .biografia p {
-        width: 300px;
+        width: 80vw;
+        text-align: justify;
     }
 
 
