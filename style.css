@@ -804,13 +804,14 @@ strong {
         
     }
 
-      .content-01 {
+
+
+    .content-01 {
 
     }
 
     .biografia p {
         width: 80vw;
-        text-align: justify;
     }
 
 
@@ -821,7 +822,7 @@ strong {
    flex-direction: column;
    background-color: transparent;
    position: relative;
-   top: 250px;
+   top: 200px;
 }
 
 .all-item-01 {
