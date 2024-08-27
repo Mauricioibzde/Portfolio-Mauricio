@@ -992,25 +992,12 @@ strong {
     top: 70rem;
 }
 
-#caixa .card-01, .back-card {
-    perspective: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.062);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    min-width: 14rem;
-    max-width: 14rem;
-    width: 12rem;
-    height: 14rem;
-    background-color: #121212;
-    border: solid 1px rgb(255, 255, 255);
+#caixa .card-01 , .back-card {
     margin-left: 22rem;
-    padding: 1rem;
+
 }
+
+
 
    
 
