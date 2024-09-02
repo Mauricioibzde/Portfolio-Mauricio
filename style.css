@@ -11,33 +11,9 @@ html, body {
     color: white;
     background-color: #131220;
     scroll-behavior: smooth;
-    
   }
-  body {
-    overflow-x: hidden;
-  }
-
-
-::-webkit-scrollbar {
-    width: 15px;
-   }
-   
-   
-   ::-webkit-scrollbar-track  {
-  background-color: black;
-   
-   }
-   
-   ::-webkit-scrollbar-thumb  {
-    width: 10px;
-    background: linear-gradient(to bottom, #190cc9, rgba(1, 11, 27, 0.103));
-    border-radius: 10px;
-      
-   
-   }
-
 /*MENU*/
-h1 , a {
+h1 {
     font-family: "Orbitron", sans-serif;
 }
 
@@ -45,8 +21,6 @@ p {
     font-family: "Inter", sans-serif;
 
 }
-
-
 
 button {
     font-family: "Oswald", sans-serif;
@@ -63,25 +37,19 @@ button {
     font-size: 24px;
     cursor: pointer;
     border-radius: 5px;
-    display: none;
     
 }
 
 .sidebar {
     position: fixed;
     top: 0;
-    right: -600px; /* Posiciona o menu fora da tela à direita */
-    width: 100%;
-    height: 100%;
-    background-color: #131220;
+    right: -300px; /* Posiciona o menu fora da tela à direita */
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom, #190cc9, rgba(1, 11, 27, 0.103));
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
     transition: right 0.3s ease; /* Suaviza a transição do menu */
     z-index: 3; /* Garante que o menu fique acima do conteúdo principal */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: none;
     
 }
 
@@ -121,11 +89,8 @@ header {
     
     display: flex;
     width: 100%;
-    height: 80px; 
+    height: 100px; 
     align-items:center ;
-    position: fixed;
-    background-color: #131220;
-    z-index: 2;
    
     
 }
@@ -188,7 +153,7 @@ header ul li a:hover {
     font-size: 80px;
 }
 
-.web-developer, .graphic-dancer {
+.web-developer {
     position: relative;
     display: inline; 
     font-size:16px;
@@ -251,19 +216,18 @@ header ul li a:hover {
     position: absolute;
     gap: 50vw;
     box-sizing: border-box;  
-    flex-direction: row-reverse;
 }
 
 .skills {
     position: relative;
     top: 20px;
-   right: 120px;
+   left: 90px;
 }
 
 .experiences {
     position: relative;
     top: 20px;
-    left: 50px;
+    right: 50px;
 }
 
 /*ITEM01*/
@@ -436,32 +400,6 @@ header ul li a:hover {
 
 /*ITEM02*/
 
-.all-item-02 {
-    display: flex;
-}
-
-.item-02-pg-03 {
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    background: #130b87;
-    height: 100vh; 
-
-    
-}
-
-.item-02-pg-03 h1 {
-    position: relative;
-    bottom: 15%;
-}
-
-
-
-
-
 .item-02-pg-03 {
   
     display: flex;
@@ -602,150 +540,147 @@ header ul li a:hover {
 
 
 /*CONTENT-04*/
-
-
-
-
-
-
-
-/**/
-
 .content-04 {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 220px); /* Três colunas de 300px */
+    justify-content: center; /* Centraliza as colunas dentro do contêiner */
     
-  
+    
 }
-.caixa-00 {
-    width: 100%;
+
+.content-06 .card-shadow {
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
     text-align: center;
-    position: relative;
-    top: 20rem;
-}
-
-
-
-.caixa-tudo {
-    overflow-x: auto;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    width: 70vw;
-    height: 18rem;
-    margin: 4rem auto;
-    text-align: center;
-    gap: 4rem;
-
+    justify-self: center; /* Centraliza os itens horizontalmente */
+    align-self: center; /* Centraliza os itens verticalmente */
 }
 
 
 
 
-
-
-
-#caixa .card-01 , .back-card {
-
-    position: relative;
+.card-shadow {
     perspective: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.062); /* Fundo transparente puxando para o preto */
     padding: 20px;
     border-radius: 10px; /* Borda arredondada opcional */
     box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.5); /* Sombra uniformemente ao redor do contêiner */
-    text-align: center;
-    min-width: 14rem;
-    max-width: 14rem;
-    width: 12rem;
-    height: 14rem;
-    background-color: #121212;
-    border: solid 1px rgb(255, 255, 255);
-    margin-left: 1rem;
-    padding: 1rem;
-
-    
-    
-    
-}
-.back-card p { 
-    text-align: justify;
-    font-size: 0.9rem;
-}
-
-.back-card h1 {
-    font-size: 0.7rem;
-}
-
-
-
-#caixa .card-01 img {
-    min-width: 14rem;
-    max-width: 14rem;
-     width: 12rem;
-     object-fit: cover;
-    
-}
-#caixa .card-01 video {
-    min-width: 12rem;
-    max-width: 12rem;
-     width: 12rem;
-     height: 12rem;
-   
-    
-}
-
-.card-back:hover {
-    transform: scale(1.1);
-}
-
-.flip-container {
     position: relative;
-    width: 12rem;
-    height: 14rem;
-    perspective: 1000px; /* Adiciona a perspectiva para o efeito 3D */
+    bottom: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
-.card-01, .back-card {
+.all-item-02 {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.card-title {
+    position: relative;
+    top: 20px;
+    width: 100;
+    height: 20px;
+    background-color: #3a0eeb;
+   
+}
+.card-shadow h1 {
+    font-size: 20px;
+}
+
+.card-shadow span {
+    font-size: 12px;
+    position: relative;
+    bottom: 5px;
+}
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 180px;
+    height: 180px;
+    perspective: 1000px;
+    position: relative;
+   
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden; /* Oculta a face traseira quando não estiver visível */
-    transition: transform 0.6s ease-in-out; /* Suaviza a transição */
-    transform-style: preserve-3d;
-    flex-direction: column;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
     
 }
 
-
-.card-01 {
-    transform: rotateY(0deg); /* Posição inicial da frente da carta */
+.flip-card-front {
+  
+}
+.flip-card-front img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+   
 }
 
-.back-card {
-    transform: rotateY(180deg); /* Esconde o verso inicialmente */
+.flip-card-front video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre toda a área da frente sem distorcer */
+    border-radius: 10px; /* Bordas arredondadas para combinar com o design */
 }
 
-/* Efeito de flip ao passar o mouse */
-.flip-container:hover .card-01 {
-    transform: rotateY(-180deg); /* Gira a frente da carta */
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #000cf0e6, rgba(14, 14, 14, 0.491));
+    transform: rotateY(180deg);
+    
 }
 
-.flip-container:hover .back-card {
-    transform: rotateY(0deg); /* Traz o verso da carta para frente */
+.flip-card-back h1 {
+    font-size: 14px;
 }
 
-
-/**/
-
+.flip-card-back p {
+    font-size: 10px;
+    padding: 5px 2px;
+}
 
 /*CONTENT-04*/
 
@@ -754,7 +689,7 @@ header ul li a:hover {
 /*FOOTER*/
 footer {
     position: relative;
-    top: 50rem;
+    top: 20%;
     background-color: #333;
     color: white;
     padding: 20px 0;
@@ -840,6 +775,7 @@ strong {
 
 /*FOOTER*/
 
+   
 @media (max-width: 768px) {
 
 
@@ -859,25 +795,8 @@ strong {
     
     }
 
-    .sidebar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .sidebar.open {
-    
-      
-    }
-
-
     .menu-header ul li {
         display: none;
-    }
-
-    #toggle-button{
-        display: block;
     }
     .content-00  {
         width: 100%;
@@ -887,7 +806,7 @@ strong {
         font-size: 40px;
       }
 
-      .web-developer, .graphic-dancer {
+      .web-developer {
         position: relative;
         display: inline; 
         font-size:12px;
@@ -897,15 +816,10 @@ strong {
 
 
 
-    .content-01 {
-        position: relative;
-        top: 25vh;
-
-    }
+ 
 
     .biografia p {
-        width: 80vw;
-        text-align: justify;
+        width: 300px;
     }
 
 
@@ -916,7 +830,7 @@ strong {
    flex-direction: column;
    background-color: transparent;
    position: relative;
-   top: 30vh;
+   top: 20px;
 }
 
 .all-item-01 {
@@ -929,11 +843,12 @@ strong {
 }
 
 .all-item-02 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 500px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     
 
@@ -974,11 +889,6 @@ strong {
     top: 60%;
 }
 
-.content-04 {
-    position: relative;
-    top: 50rem;
-}
-
 .card-container {
     display: flex;
     justify-content: center;
@@ -990,27 +900,20 @@ strong {
     top: 13vh;
 }
 
-.caixa-tudo {
-    gap: 6rem;
-}
-
-
-.caixa-00 {
-    width: 100%;
-    text-align: center;
+.content-04 {
     position: relative;
-  
-}
-
-#caixa .card-01 , .back-card {
-    margin-left: 26rem;
-
-}
-
-
-
+    top: 60rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
    
-
+}
 
 .coming-soon {
     z-index: 5;
@@ -1025,7 +928,7 @@ strong {
 
 footer {
     position: relative;
-    top: 100rem;
+    top: 100%;
 }
 }
 
@@ -1033,6 +936,7 @@ footer {
    
  
     
+
 
 
 
