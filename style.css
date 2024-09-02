@@ -974,7 +974,7 @@ strong {
     top: 60%;
 }
 
-    .content-04 {
+.content-04 {
     position: relative;
     top: 200px;
 }
@@ -988,6 +988,10 @@ strong {
 .btn-bottom {
     position: relative;
     top: 13vh;
+}
+
+.caixa-tudo .flipped {
+    gap: 10rem;
 }
 
 .caixa-00 {
