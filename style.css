@@ -974,6 +974,11 @@ strong {
     top: 60%;
 }
 
+    .content-04 {
+    position: relative;
+    top: 200px;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
