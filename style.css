@@ -121,7 +121,7 @@ header {
     
     display: flex;
     width: 100%;
-    height: 80px; 
+    height: 100px; 
     align-items:center ;
     position: fixed;
     background-color: #131220;
@@ -639,7 +639,7 @@ header ul li a:hover {
     height: 18rem;
     margin: 4rem auto;
     text-align: center;
-    gap: 4rem;
+    gap: 8rem;
 
 }
 
@@ -840,6 +840,8 @@ strong {
 
 /*FOOTER*/
 
+
+
 @media (max-width: 768px) {
 
 
@@ -863,6 +865,7 @@ strong {
         display: flex;
         justify-content: center;
         align-items: center;
+        right: -800px;
         
     }
 
@@ -1003,7 +1006,24 @@ strong {
 }
 
 #caixa .card-01 , .back-card {
-    margin-left: 26rem;
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.062);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    min-width: 14rem;
+    max-width: 14rem;
+    width: 12rem;
+    height: 14rem;
+    background-color: #121212;
+    border: solid 1px rgb(255, 255, 255);
+    margin-left: 18rem;
+    padding: 1
 
 }
 
@@ -1028,6 +1048,50 @@ footer {
     top: 100rem;
 }
 }
+
+@media (max-width: 668px) {
+    #caixa .card-01 , .back-card {
+        position: relative;
+        perspective: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.062);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        min-width: 14rem;
+        max-width: 14rem;
+        width: 12rem;
+        height: 14rem;
+        background-color: #121212;
+        border: solid 1px rgb(255, 255, 255);
+        margin-left: 20rem;
+        padding: 1
+    
+    }
+    @media (max-width: 500px)
+    {
+        #caixa .card-01 , .back-card {
+            margin-left: 25rem;
+
+
+        }
+
+    }
+    @media (max-width: 380px)
+    {
+        #caixa .card-01 , .back-card {
+            margin-left: 26rem;
+
+
+        }
+
+    }
+
+}
+
 
 
    
