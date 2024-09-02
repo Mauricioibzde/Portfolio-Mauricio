@@ -990,9 +990,10 @@ strong {
     top: 13vh;
 }
 
-.caixa-tudo .flipped {
-    gap: 10rem;
+.caixa-tudo {
+    gap: 6rem;
 }
+
 
 .caixa-00 {
     width: 100%;
@@ -1002,7 +1003,7 @@ strong {
 }
 
 #caixa .card-01 , .back-card {
-    margin-left: 22rem;
+    margin-left: 26rem;
 
 }
 
