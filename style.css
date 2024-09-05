@@ -70,7 +70,7 @@ button {
 .sidebar {
     position: fixed;
     top: 0;
-    right: -600px; /* Posiciona o menu fora da tela à direita */
+    right: 1010px; /* Posiciona o menu fora da tela à direita */
     width: 100%;
     height: 100%;
     background-color: #131220;
