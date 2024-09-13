@@ -1156,11 +1156,10 @@ footer {
 
 
 }
-
 @media (max-width: 540px  )   {
     .content-04 {
         position: relative;
-        top: 110rem;
+        top: 40rem;
     }
     footer {
         position: relative;
@@ -1175,7 +1174,6 @@ footer {
     
 
 }
-
 
    
  
