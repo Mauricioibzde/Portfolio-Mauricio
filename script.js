@@ -32,3 +32,22 @@ menuLinks.forEach(function(link) {
         });
     });
 });
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona todos os elementos com a classe "flip-card"
+    var cards = document.querySelectorAll(".flip-card");
+  
+    // Adiciona um evento de clique para cada card
+    cards.forEach(function(card) {
+      card.addEventListener("click", function() {
+        // Alterna a classe "flipped" ao clicar
+        card.classList.toggle("flipped");
+      });
+    });
+  });
+  
