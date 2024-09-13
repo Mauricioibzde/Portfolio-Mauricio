@@ -70,7 +70,7 @@ button {
 .sidebar {
     position: fixed;
     top: 0;
-    right: 1010px; /* Posiciona o menu fora da tela à direita */
+    right: -1000px; /* Posiciona o menu fora da tela à direita */
     width: 100%;
     height: 100%;
     background-color: #131220;
@@ -203,7 +203,7 @@ header ul li a:hover {
 .content-01 {
   
     width: 100%;
-    height: 120%;
+    height: 100%;
     display:flex ;
     justify-content: center;
     align-items:center ;
@@ -592,9 +592,10 @@ header ul li a:hover {
 .content-03 {
     width: 100%;
     height: 100%;
-    position: relative;
-    top: 200px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: linear-gradient(to top, #000000, rgba(1, 11, 27, 0.103));
 }
 
 /*CONTENT-03*/
@@ -620,130 +621,191 @@ header ul li a:hover {
     
   
 }
-.caixa-00 {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    top: 20rem;
+
+h3 {
+    color: white;
+  padding: 20px;
 }
 
 
 
-.caixa-tudo {
-    overflow-x: auto;
-    overflow-y: hidden;
+section {
     display: flex;
-    justify-content: center;
-    width: 70vw;
-    height: 18rem;
-    margin: 4rem auto;
-    text-align: center;
-    gap: 4rem;
-
+    flex-direction: column;
 }
-
-
-
-
-
-
-
-#caixa .card-01 , .back-card {
-
-    position: relative;
-    perspective: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.062); /* Fundo transparente puxando para o preto */
-    padding: 20px;
-    border-radius: 10px; /* Borda arredondada opcional */
-    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.5); /* Sombra uniformemente ao redor do contêiner */
-    text-align: center;
-    min-width: 14rem;
-    max-width: 14rem;
-    width: 12rem;
-    height: 14rem;
-    background-color: #121212;
-    border: solid 1px rgb(255, 255, 255);
-    margin-left: 1rem;
-    padding: 1rem;
-
-    
-    
-    
-}
-.back-card p { 
-    text-align: justify;
-    font-size: 0.9rem;
-}
-
-.back-card h1 {
-    font-size: 0.7rem;
-}
-
-
-
-#caixa .card-01 img {
-    min-width: 14rem;
-    max-width: 14rem;
-     width: 12rem;
-     object-fit: cover;
-    
-}
-#caixa .card-01 video {
-    min-width: 12rem;
-    max-width: 12rem;
-     width: 12rem;
-     height: 12rem;
+.card-all {
    
-    
+    display: flex;
+    gap: 2rem;
+  flex: 1 0 30%;
+  aspect-ratio: 1;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #000000, rgba(1, 11, 27, 0.103));
+  scroll-snap-align: center;
 }
 
-.card-back:hover {
-    transform: scale(1.1);
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-.flip-container {
+
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 300px;
+   
+    perspective: 1000px; /*    border: 1px solid #f1f1f1;  Remove this if you don't want the 3D effect */
+    border-radius: 1rem;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
     position: relative;
-    width: 12rem;
-    height: 14rem;
-    perspective: 1000px; /* Adiciona a perspectiva para o efeito 3D */
-}
-
-.card-01, .back-card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Class to rotate the card */
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 3rem;
+    border: solid 3px white;
+
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.573);
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background: linear-gradient(to bottom, #181818, rgba(0, 12, 30, 0.404));
+    color: rgb(91, 91, 91);
+  }
+
+  .flip-card-front img {
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  .flip-card-front video {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+   
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background: linear-gradient(to bottom, #181818, rgba(0, 12, 30, 0.404));
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  body {
+    margin: 0;
+    position: relative;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /*  min-height: 100vh;*/
+    padding-bottom: 64px;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    padding-block: 16px 32px;
+    margin: 16px 32px;
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    height: 14px;
+    width: calc(100% - 48px);
+  }
+  
+  .carousel-container::-webkit-scrollbar-track {
+    background: #b1b3b399;
+  }
+  
+  .carousel-container::-webkit-scrollbar-thumb {
+    background: #29AB87;
+  }
+  
+  .carousel-container::-webkit-scrollbar-track-piece:start {
+    background: #29AB87;
+  }
+  
+  .carousel-slide {
+    flex: 1 0 30%;
+    aspect-ratio: 1;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b20d8;
+    scroll-snap-align: center;
+    border-radius: 1rem;
+
+  } 
+  
+  @media (max-width: 600px) {
+    .carousel-slide {
+      flex: 1 0 90%;
+    }
+  }
+  
+  footer {
+    position: absolute;
+    width: 100%;
     left: 0;
-    backface-visibility: hidden; /* Oculta a face traseira quando não estiver visível */
-    transition: transform 0.6s ease-in-out; /* Suaviza a transição */
-    transform-style: preserve-3d;
-    flex-direction: column;
-    
-}
+    bottom: 0;
+    text-align: center;
+    padding: 16px;
+    background-color: #eaeaea90;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  footer p {
+    color: #221133;
+    margin: 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
 
 
-.card-01 {
-    transform: rotateY(0deg); /* Posição inicial da frente da carta */
-}
 
-.back-card {
-    transform: rotateY(180deg); /* Esconde o verso inicialmente */
-}
-
-/* Efeito de flip ao passar o mouse */
-.flip-container:hover .card-01 {
-    transform: rotateY(-180deg); /* Gira a frente da carta */
-}
-
-.flip-container:hover .back-card {
-    transform: rotateY(0deg); /* Traz o verso da carta para frente */
-}
-
-
-/**/
 
 
 /*CONTENT-04*/
@@ -916,6 +978,7 @@ strong {
    background-color: transparent;
    position: relative;
    top: 30vh;
+   width: 100%;
 }
 
 .all-item-01 {
@@ -974,8 +1037,11 @@ strong {
 }
 
 .content-04 {
+    width: 100%;
     position: relative;
-    top: 60rem;
+    display: flex;
+    justify-content: center;
+    top: 90rem;
 }
 
 .card-container {
@@ -990,20 +1056,31 @@ strong {
 }
 
 .caixa-tudo {
+ 
+  
+   
+  
     gap: 6rem;
 }
 
 
 .caixa-00 {
-    width: 100%;
     text-align: center;
     position: relative;
+    scroll-behavior: smooth; /* Rolagem suave */
+    transform: none; /* Remove transformações indesejadas */
+    max-width: min-content;
+    
+
+    
   
 }
 
 #caixa .card-01 , .back-card {
+    margin-left: 24rem;
   
- margin-left: 26rem;
+  
+
 }
 
 
@@ -1024,7 +1101,7 @@ strong {
 
 footer {
     position: relative;
-    top: 100rem;
+    top: 120rem;
 }
 }
 
