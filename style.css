@@ -24,13 +24,13 @@ html, body {
    
    
    ::-webkit-scrollbar-track  {
-  background-color: black;
+  background-color: #b1b3b399;
    
    }
    
    ::-webkit-scrollbar-thumb  {
     width: 10px;
-    background: linear-gradient(to bottom, #190cc9, rgba(1, 11, 27, 0.103));
+   background-color:  #29AB87;;
     border-radius: 10px;
       
    
@@ -83,10 +83,12 @@ button {
     text-align: center;
     display: none;
     
+    
 }
 
 .sidebar.open {
     right: 0; /* Quando aberto, o menu é trazido para a tela */
+   
 }
 
 .menu-section {
@@ -172,8 +174,19 @@ header ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #190cc9, rgba(1, 11, 27, 0.103));
     overflow-x: hidden;
+    background: linear-gradient(-30deg, #131220 50%, #2605b741 50%);
+}
+
+.content-00 img {
+    width: 25rem;
+    position: absolute;
+    border-radius: 500px  10px ;
+    border: solid 1px white;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.769);
+   background-color: #0000004e;
+
+    
 }
 
 .title {
@@ -186,6 +199,8 @@ header ul li a:hover {
     animation: typing 4s steps(40, end) forwards; /* Ajuste o número de steps conforme necessário */
     text-align: center;
     font-size: 80px;
+    z-index: 1;
+   
 }
 
 .web-developer, .graphic-dancer {
@@ -193,8 +208,11 @@ header ul li a:hover {
     display: inline; 
     font-size:16px;
     bottom: 80px;
+    z-index: 2;
     
 }
+
+
 
 /*CONTENT-00*/
 
@@ -618,8 +636,15 @@ header ul li a:hover {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    top: 60rem ;
+    position: relative;
+   
     
   
+}
+.flip-card-back h1 {
+    color: white;
+  padding: 10px;
 }
 
 h3 {
@@ -655,8 +680,8 @@ main {
 
 .flip-card {
     background-color: transparent;
-    width: 280px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
    
     perspective: 1000px; /*    border: 1px solid #f1f1f1;  Remove this if you don't want the 3D effect */
     border-radius: 1rem;
@@ -698,15 +723,15 @@ main {
   }
 
   .flip-card-front img {
-    width: 280px;
-    height: 300px;
+    width: 250px;
+    height: 280px;
     object-fit: cover;
     border-radius: 1rem;
   }
 
   .flip-card-front video {
     width: 200px;
-    height: 300px;
+    height: 380px;
     object-fit: cover;
     border-radius: 1rem;
    
@@ -762,13 +787,13 @@ main {
   }
   
   .carousel-slide {
-    flex: 1 0 30%;
+    flex: 1 0 20%;
     aspect-ratio: 1;
     flex-flow: column nowrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4b20d8;
+    background-color: #4b20d833;
     scroll-snap-align: center;
     border-radius: 1rem;
 
@@ -802,6 +827,8 @@ main {
     text-decoration: none;
     color: inherit;
   }
+
+
   
 
 
@@ -815,7 +842,7 @@ main {
 /*FOOTER*/
 footer {
     position: relative;
-    top: 50rem;
+    top: 120rem;
     background-color: #333;
     color: white;
     padding: 20px 0;
@@ -901,7 +928,9 @@ strong {
 
 /*FOOTER*/
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 768px  )  {
 
 
 
@@ -942,6 +971,16 @@ strong {
     }
     .content-00  {
         width: 100%;
+    }
+
+
+    .content-00 img {
+        width: 16rem;
+        position: absolute;
+        border-radius: 500px 10px;
+        border: solid 1px white;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.769);
+        background: linear-gradient(-30deg, #00000087 50%, #23232353 50%);
     }
 
     .content-00 .title  {
@@ -1041,7 +1080,11 @@ strong {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 90rem;
+    top: 30rem;
+}
+section {
+    position: relative;
+    top: 50rem;
 }
 
 .card-container {
@@ -1055,54 +1098,82 @@ strong {
     top: 13vh;
 }
 
-.caixa-tudo {
- 
-  
-   
-  
-    gap: 6rem;
-}
 
 
-.caixa-00 {
-    text-align: center;
-    position: relative;
-    scroll-behavior: smooth; /* Rolagem suave */
-    transform: none; /* Remove transformações indesejadas */
-    max-width: min-content;
-    
 
-    
-  
-}
 
-#caixa .card-01 , .back-card {
-    margin-left: 24rem;
-  
-  
 
-}
 
 
 
    
 
 
-.coming-soon {
-    z-index: 5;
-    position: absolute;
-    text-align: center;
-}
 
-.card-shadow {
-    display: none;
-}
+
 
 
 footer {
     position: relative;
     top: 120rem;
 }
+}
+
+
+
+
+
+
+@media (max-width: 750px  ) {
+    .content-04 {
+        position: relative;
+        top: 90rem;
+    }
+
+    .content-04 .flip-card {
+        width: 280px;
+        height: 300px;
+    }
+    footer {
+        position: relative;
+        top: 180rem;
+    }
+
+    .flip-card-front img {
+        width: 240px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+    
+      .flip-card-front video {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+       
+      }
+
+
+}
+
+@media (max-width: 540px  )   {
+    .content-04 {
+        position: relative;
+        top: 110rem;
+    }
+    footer {
+        position: relative;
+        top: 200rem;
+    }
+
+    .content-00 img {
+        width: 16rem;
+
+
+    }
+    
+
 }
 
 
