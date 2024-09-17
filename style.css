@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+ text-decoration: none;
+ color: white;
   
 }
 html, body {
@@ -19,7 +21,7 @@ body {
 
 
 
-h1 , a {
+h1 , h3 , a {
  
   font-family: "Orbitron", sans-serif;
 }
@@ -55,7 +57,7 @@ h1 {
   right: -1000px; /* Posiciona o menu fora da tela à direita */
   width: 100%;
   height: 100%;
-  background-color: #131220;
+  background: linear-gradient(to bottom, #9000f0, rgba(0, 0, 0, 0.968));
   box-shadow: -2px 0 5px rgba(0,0,0,0.5);
   transition: right 0.3s ease; /* Suaviza a transição do menu */
   z-index: 3; /* Garante que o menu fique acima do conteúdo principal */
@@ -64,6 +66,7 @@ h1 {
   align-items: center;
   text-align: center;
   display: none;
+ 
   
   
 }
@@ -75,6 +78,7 @@ h1 {
 
 .menu-section {
   padding: 20px;
+  
 }
 
 .menu {
@@ -84,7 +88,8 @@ h1 {
 }
 
 .menu li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 1rem;
 }
 
 .menu ul li a {
@@ -92,6 +97,7 @@ h1 {
   color: white;
   font-size: 12px;
   display: block;
+ 
 }
 
 .menu li a:hover {
@@ -138,6 +144,7 @@ header ul li a {
   list-style-type: none;
   color: aliceblue;
   
+  
 }
 header ul li a:hover {
 
@@ -148,6 +155,39 @@ header ul li a:hover {
 }
 
 
+/**/
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  position: fixed;
+  background: linear-gradient(to top, #000000, #000000);
+  z-index: 2;
+  top: -80px; /* Menu fica oculto inicialmente */
+  transition: top 0.3s ease-in-out; /* Suave transição */
+}
+
+.menu-header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-header ul li {
+  display: inline;
+}
+
+.menu-header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/**/
+
+
 .content-01 {
   width: 100%;
   height: 100%;
@@ -156,18 +196,21 @@ header ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow-x: hidden;
-  background-color: #131220;
+  
 
 }
 
+.background-video {
+  width: 100%;
+ 
+}
+
 .content-01 img {
-  width: 24rem;
+  width: 45rem;
   position: absolute;
   border-radius: 500px  10px ;
-  border: solid 1px white;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.769);
- background-color: #0000004e;
+  box-shadow: 0 20px 50px #761de3;
+ background-color: #fafafaf0;
 
   
 }
@@ -182,7 +225,7 @@ header ul li a:hover {
   animation: typing 4s steps(40, end) forwards; /* Ajuste o número de steps conforme necessário */
   text-align: center;
   font-size: 80px;
-  z-index: 1;
+  
  
 }
 
@@ -245,7 +288,7 @@ header ul li a:hover {
 .content-03 {
   display: flex;
   justify-content: center;
-  background-color: #131220;
+  background: linear-gradient(to bottom, #4600a8af, #6604d659);
 
   width: 100%;
   
@@ -402,14 +445,19 @@ main {
 
 .carousel-container::-webkit-scrollbar-track {
   background: #b1b3b399;
+ 
 }
 
 .carousel-container::-webkit-scrollbar-thumb {
-  background: #29AB87;
+  background: #3f008b;
+  border-radius: 50px;
+  
+  
 }
 
 .carousel-container::-webkit-scrollbar-track-piece:start {
-  background: #29AB87;
+  background: #b1b3b399;
+
 }
 
 .carousel-slide {
@@ -419,7 +467,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4b20d833;
+  background: linear-gradient(to bottom, #9000f0b9, rgba(146, 160, 183, 0.082));
   scroll-snap-align: center;
   border-radius: 1rem;
 
@@ -761,7 +809,7 @@ display: flex;
     footer {
         position: relative;
         top: 5rem;
-       background-color: #131220;
+        background: linear-gradient(to bottom, #9000f0b9, rgba(146, 160, 183, 0.082));
         color: rgb(255, 255, 255);
         padding: 20px 0;
     }
@@ -995,7 +1043,7 @@ display: flex;
 
   @media (max-width: 600px) {
     .content-01 img {
-      width: 15rem;
+      width: 23rem;
   }
 
   .title {
