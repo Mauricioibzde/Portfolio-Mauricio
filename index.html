@@ -18,18 +18,17 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400..900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
 
     <header>
         <nav class="menu-header">
 
             <ul>
-                <li><a href="#content-00">Home</a></li>
-                <li><a href="#content-01">About<span>me</span></a></li>
+                <li><a href="#content-01">Home</a></li>
+                <li><a href="#content-02">About<span>me</span></a></li>
                 <li><a href="#content-03">Experiences</a></li>
                 <li><a href="#content-03">Skills</a></li>
-                <li><a href="#content-06">Projects</a></li>
+                <li><a href="#content-04">Projects</a></li>
                 <li><a href="#footer-contact">Contact</a></li>
             </ul>
         </nav>
@@ -38,31 +37,27 @@
     <div class="sidebar" id="sidebar">
         <div class="menu-section">
             <ul class="menu">
-                <li><a href="#content-00" class="menu-link" data-offset="100">Home</a></li>
-            <li><a href="#content-01" class="menu-link" data-offset="300">About<span>me</span></a></li>
-            <li><a href="#content-02" class="menu-link" data-offset="-65">Experiences</a></li>
-            <li><a href="#content-04" class="menu-link" data-offset="80">Skills</a></li>
-            <li><a href="#content-06" class="menu-link" data-offset="120">Projects</a></li>
-            <li><a href="#footer-contact" class="menu-link" data-offset="100">Contact</a></li>
+                <li><a href="#content-01" class="menu-link" data-offset="#">Home</a></li>
+            <li><a href="#content-02" class="menu-link" data-offset="-200">About<span>me</span></a></li>
+            <li><a href="#content-03" class="menu-link" data-offset="100">Experiences</a></li>
+            <li><a href="#content-03" class="menu-link" data-offset="-550">Skills</a></li>
+            <li><a href="#content-04" class="menu-link" data-offset="#">Projects</a></li>
+            <li><a href="#footer-contact" class="menu-link" data-offset="#">Contact</a></li>
             </ul>
         </div>
     </div>
     </header>
 
-
-    
-
-
-   
-
-    <div id="content-00" class="content-00">
-        <h1 class="title">Hi, I'm Mauricio <br> <span class="web-developer">Web Developer,</span> <span
-                class="graphic-dancer">Graphic Designer and Dancer!</span> </h1>
-                <img class="myself" src="./img/mauricio.png" alt="">
-    </div>
-  
-
     <div id="content-01" class="content-01">
+        <h1 class="title">Hi, I'm Mauricio  </h1>
+            <h1 class="subtitle"> Web Developer Graphic Designer and Dancer!</h1>
+            <img class="myself" src="./img/mauricio.png" alt="">
+</div>
+              
+    </div>
+
+
+    <div id="content-02" class="content-02">
         <div class="biografia">
             <h1 class="about-me">About me</h1>
             <p class="info-biografia">My journey into the world of IT started when I was 13 years old and had my first
@@ -105,46 +100,59 @@
 
 
 
-    <div class="title-content-02"><h1 class="skills">Skills</h1>  <h1 class="experiences">Experiences</h1></div>
-    <div id="content-02" class="content-02">
-       
-        <div  id="content-02" class="item-01-pg-03">
-           <div class="all-item-01">
-       
-            <p class="description-01-pg-03">2023 - 2024
-                <br> Freelance Front-end developer & graphic designer
-            </p>
-            <a href="#content-04" class="animated-button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                SEE PROJECTS!
-              </a>
+ 
 
-            <p class="description-02-pg-03">
-                04/2021 – 02/2022
-                <br> Graphic Designer at „Criart“ – in Joao Pessoa / Brazil
-                <br>Development of wind banners, banners, flyers, signs, stickers and business cards, shop front
-                graphics.
-            </p>
-            <a href="#" class="animated-button btn-bottom ">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                SEE WORKS!
-              </a>
 
-           </div>
+
+
+    <div id="content-03" class="content-03">
+        <div id="item-01" class="item-01">
+    
+    
+            <div class="item-container">
+                <h1 class="title-02">Projects</h1>
+                <div class="box">
+    
+    
+                    <p>2023 - 2024
+                        <br> Freelance Front-end developer & graphic designer
+                    </p>
+                    <a class="animated-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SEE PROJECTS!
+                    </a>
+    
+                    <p class="date-description">
+                        04/2021 – 02/2022
+                        <br> Graphic Designer at „Criart“ – in Joao Pessoa / Brazil
+                        <br>Development of wind banners, banners, flyers, signs, stickers and business cards, shop front
+                        graphics.
+                    </p>
+                    <a href="#" class="animated-button btn-bottom ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        SEE WORKS!
+                    </a>
+    
+                </div>
+    
+            </div>
+    
         </div>
-        <div class="item-02-pg-03">
-            
-       
-            <div class="all-item-02">
+    
+        <div class="item-02">
+          <div class="item-container">
+            <h1 class="title-02">Skills</h1>
+    
             <div class="card-container">
-             
-                
+    
+    
+    
                 <div class="card">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
                     <p>JavaScript</p>
@@ -194,197 +202,201 @@
                         alt="Corel Draw">
                     <p>Corel Draw</p>
                 </div>
-
+    
             </div>
-
+          </div>
+    
         </div>
+    
+    
     </div>
 
-    </div>
 
 
-    <div id="content-04" class="content-04">
+
+
+
+
+<div id="content-04" class="content-04">
      
-        <section>
-            <main class="main designer">
-               <h1 class="title">Web</h1>
-               <div class="carousel-container"> 
-                 <div class="carousel-slide">
-                   <div class="flip-card card-big">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <img src="./img/site02.jpeg" alt="">
-                           <h3>Sneaker Hub</h3>
-                          
-                         </div>
-                         <div class="flip-card-back">
-                           <!-- Conteúdo de trás da carta -->
-                           <h1>HTML, CSS <br> Tools: photoshop</h1>
-                           <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
-                         </div>
-                       </div>
+    <section>
+        <main class="main designer">
+           <h1 class="title">Web</h1>
+           <div class="carousel-container"> 
+             <div class="carousel-slide">
+               <div class="flip-card card-big">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="./img/site02.jpeg" alt="">
+                       <h3>Sneaker Hub</h3>
+                      
                      </div>
-       
-       
-                 </div>
-                 <div class="carousel-slide">
-                   <div class="flip-card">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <img src="./img/prodesign.jpeg" alt="">
-                          <h3>ProDesign</h3>
-                         </div>
-                         <div class="flip-card-back">
-                           <!-- Conteúdo de trás da carta -->
-                           <h1>HTML, CSS <br> Tools: photoshop</h1>
-                           <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
-                         </div>
-                       </div>
+                     <div class="flip-card-back">
+                       <!-- Conteúdo de trás da carta -->
+                       <h1>HTML, CSS <br> Tools: photoshop</h1>
+                       <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
                      </div>
+                   </div>
                  </div>
-                 <div class="carousel-slide">3</div>
-                 <div class="carousel-slide">4</div>
-                 <div class="carousel-slide">5</div>
-                 <div class="carousel-slide">6</div>
-                 <div class="carousel-slide">7</div>
-                 <div class="carousel-slide">8</div>
-               </div>
-             </main>
-       
-       
-       
-             <main class="main designer">
-               <h1 class="title">Motion</h1>
-               <div class="carousel-container"> 
-                 <div class="carousel-slide">
-                   <div class="flip-card">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <video src="./video/michael.mp4" autoplay muted loop></video>
-                           <h3>Mj Motion</h3>
-                          
-                         </div>
-                         <div class="flip-card-back">
-                           <!-- Conteúdo de trás da carta -->
-                           <h1><br> Tools: After effects</h1>
-                           <p>This project allowed me to practice and improve my motion design skills, experimenting with various techniques and pushing the boundaries of my creativity. It served as a valuable exercise in translating ideas into dynamic visual experiences.</p>
-                        </div>
-                        
-
-                       </div>
+   
+   
+             </div>
+             <div class="carousel-slide">
+               <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="./img/prodesign.jpeg" alt="">
+                      <h3>ProDesign</h3>
                      </div>
-       
-       
-                 </div>
-                 <div class="carousel-slide">
-                   <div class="flip-card">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <video src="./video/djonga.mp4" autoplay muted loop></video>
-                           <h3>Rap Djonga</h3>
-                           
-                         </div>
-                         <div class="flip-card-back">
-                           <!-- Conteúdo de trás da carta -->
-                           <h1>HTML, CSS <br> Tools: photoshop</h1>
-                           <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
-                         </div>
-                       </div>
+                     <div class="flip-card-back">
+                       <!-- Conteúdo de trás da carta -->
+                       <h1>HTML, CSS <br> Tools: photoshop</h1>
+                       <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
                      </div>
+                   </div>
                  </div>
-                 <div class="carousel-slide">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <video src="./video/mc hariel.mp4" autoplay muted loop></video>
-                            <h3>Rap Hariel</h3>
-                            
-                          </div>
-                          <div class="flip-card-back">
-                            <!-- Conteúdo de trás da carta -->
-                            <h1>HTML, CSS <br> Tools: photoshop</h1>
-                            <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
-                          </div>
-                        </div>
-                      </div>
+             </div>
+             <div class="carousel-slide">3</div>
+             <div class="carousel-slide">4</div>
+             <div class="carousel-slide">5</div>
+             <div class="carousel-slide">6</div>
+             <div class="carousel-slide">7</div>
+             <div class="carousel-slide">8</div>
+           </div>
+         </main>
+   
+   
+   
+         <main class="main designer">
+           <h1 class="title">Motion</h1>
+           <div class="carousel-container"> 
+             <div class="carousel-slide">
+               <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <video src="./video/michael.mp4" autoplay muted loop></video>
+                       <h3>Mj Motion</h3>
+                      
+                     </div>
+                     <div class="flip-card-back">
+                       <!-- Conteúdo de trás da carta -->
+                       <h1><br> Tools: After effects</h1>
+                       <p>This project allowed me to practice and improve my motion design skills, experimenting with various techniques and pushing the boundaries of my creativity. It served as a valuable exercise in translating ideas into dynamic visual experiences.</p>
+                    </div>
                     
-                 </div>
-                 <div class="carousel-slide">4</div>
-                 <div class="carousel-slide">5</div>
-                 <div class="carousel-slide">6</div>
-                 <div class="carousel-slide">7</div>
-                 <div class="carousel-slide">8</div>
-               </div>
-             </main>
-       
-       
-       
-             <main class="main designer">
-               <h1 class="title">Design</h1>
-               <div class="carousel-container"> 
-                 <div class="carousel-slide">
-                   <div class="flip-card">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <img src="./img/aposta.jpg" alt="">
-                           <h3>Aposta</h3>
-                          
-                         </div>
-                         <div class="flip-card-back">
-                           <!-- Conteúdo de trás da carta -->
-                           <h1>HTML, CSS <br> Tools: photoshop</h1>
-                           <p>I had the pleasure of working with a client from brazil who owns a betting company, creating
-                            graphic designs that capture the fun and energy of their business. The project involved
-                            developing a cohesive visual identity.</p>
-                         </div>
-                       </div>
-                     </div>
-       
-       
-                 </div>
-                 <div class="carousel-slide">
-                   <div class="flip-card">
-                       <div class="flip-card-inner">
-                         <div class="flip-card-front">
-                           <img src="./img/voodeparatrike.jpg" alt="">
-                           <h3>voodeparatrike</h3>
-                         </div>
-                         <div class="flip-card-back">
-                           <!-- Conteúdo de trás da carta -->
-                           <h1>HTML, CSS <br> Tools: photoshop</h1>
-                           <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
-                         </div>
-                       </div>
-                     </div>
-                 </div>
-                 <div class="carousel-slide">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="./img/salao.png" alt="">
-                            <h3>Beauty Salon</h3>
-                          </div>
-                          <div class="flip-card-back">
-                            <!-- Conteúdo de trás da carta -->
-                            <h1>HTML, CSS <br> Tools: photoshop</h1>
-                            <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
-                          </div>
-                        </div>
-                      </div>
-                 </div>
-                 <div class="carousel-slide">4</div>
-                 <div class="carousel-slide">5</div>
-                 <div class="carousel-slide">6</div>
-                 <div class="carousel-slide">7</div>
-                 <div class="carousel-slide">8</div>
-               </div>
-             </main>
-       
-       
-           </section>
-       </div>
 
-        
+                   </div>
+                 </div>
+   
+   
+             </div>
+             <div class="carousel-slide">
+               <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <video src="./video/djonga.mp4" autoplay muted loop></video>
+                       <h3>Rap Djonga</h3>
+                       
+                     </div>
+                     <div class="flip-card-back">
+                       <!-- Conteúdo de trás da carta -->
+                       <h1>HTML, CSS <br> Tools: photoshop</h1>
+                       <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
+                     </div>
+                   </div>
+                 </div>
+             </div>
+             <div class="carousel-slide">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <video src="./video/mc hariel.mp4" autoplay muted loop></video>
+                        <h3>Rap Hariel</h3>
+                        
+                      </div>
+                      <div class="flip-card-back">
+                        <!-- Conteúdo de trás da carta -->
+                        <h1>HTML, CSS <br> Tools: photoshop</h1>
+                        <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
+                      </div>
+                    </div>
+                  </div>
+                
+             </div>
+             <div class="carousel-slide">4</div>
+             <div class="carousel-slide">5</div>
+             <div class="carousel-slide">6</div>
+             <div class="carousel-slide">7</div>
+             <div class="carousel-slide">8</div>
+           </div>
+         </main>
+   
+   
+   
+         <main class="main designer">
+           <h1 class="title">Design</h1>
+           <div class="carousel-container"> 
+             <div class="carousel-slide">
+               <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="./img/aposta.jpg" alt="">
+                       <h3>Aposta</h3>
+                      
+                     </div>
+                     <div class="flip-card-back">
+                       <!-- Conteúdo de trás da carta -->
+                       <h1>HTML, CSS <br> Tools: photoshop</h1>
+                       <p>I had the pleasure of working with a client from brazil who owns a betting company, creating
+                        graphic designs that capture the fun and energy of their business. The project involved
+                        developing a cohesive visual identity.</p>
+                     </div>
+                   </div>
+                 </div>
+   
+   
+             </div>
+             <div class="carousel-slide">
+               <div class="flip-card">
+                   <div class="flip-card-inner">
+                     <div class="flip-card-front">
+                       <img src="./img/voodeparatrike.jpg" alt="">
+                       <h3>voodeparatrike</h3>
+                     </div>
+                     <div class="flip-card-back">
+                       <!-- Conteúdo de trás da carta -->
+                       <h1>HTML, CSS <br> Tools: photoshop</h1>
+                       <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
+                     </div>
+                   </div>
+                 </div>
+             </div>
+             <div class="carousel-slide">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="./img/salao.png" alt="">
+                        <h3>Beauty Salon</h3>
+                      </div>
+                      <div class="flip-card-back">
+                        <!-- Conteúdo de trás da carta -->
+                        <h1>HTML, CSS <br> Tools: photoshop</h1>
+                        <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.
+                      </div>
+                    </div>
+                  </div>
+             </div>
+             <div class="carousel-slide">4</div>
+             <div class="carousel-slide">5</div>
+             <div class="carousel-slide">6</div>
+             <div class="carousel-slide">7</div>
+             <div class="carousel-slide">8</div>
+           </div>
+         </main>
+   
+   
+       </section>
+   </div>
 
    <footer id="footer-contact">
     <div class="footer-container">
@@ -408,197 +420,14 @@
     </div>
    
 
-   
-     
-        
 
 
 
-<script src="script.js"></script>
 
-    
+
+
+  
 </body>
+<script src="script.js"></script>
 </html>
-    
-       
-<!--<div class="caixa-tudo">
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Sneaker</h1>
-                      <img src="./img/site02.jpeg" alt="">
-                    </div>
-                    <div class="back-card">
-                        <h1>HTML, CSS <br> Tools: photoshop</h1>
-                        <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Prodesign</h1>
-                       <img src="./img/prodesign.jpeg" alt="">
-                    </div>
-                    <div class="back-card">
-                        <h1>HTML, CSS <br> Tools: photoshop</h1>
-                        <p>I developed this website to enhance my responsive web design skills while exploring my creativity. The goal was to create a site that offers an optimal viewing experience across all devices. This project helped me deepen my understanding of essential responsive design principles.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                       coming soon
-                    </div>
-                    <div class="back-card">
-                        Informações adicionais sobre o vídeo
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                       coming soon
-                    </div>
-                    <div class="back-card">
-                        Informações adicionais sobre o vídeo
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        
-        
-        
-    </div> 
-
-    <div class="caixa-00">
-        <h1>Motion Graphics</h1>
-
-        <div class="caixa-tudo">
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Mj Motion</h1>
-                       <video autoplay muted loop src="./video/michael.mp4"></video>
-                    </div>
-                    <div class="back-card">
-                       <p> <h1>Tools: After Effects</h1>
-                       <p>This project allowed me to practice and improve my motion design skills, experimenting with various techniques and pushing the boundaries of my creativity. It served as a valuable exercise in translating ideas into dynamic visual experiences.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Jonga mc</h1>
-                        <video autoplay muted loop src="./video/djonga.mp4"></video>
-                    </div>
-                    <div class="back-card">
-                        Informações adicionais sobre o vídeo
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Mc Hariel</h1>
-                        <video autoplay muted loop src="./video/mc hariel.mp4"></video>
-                    </div>
-                    <div class="back-card">
-                        Informações adicionais sobre o vídeo
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                       coming soon
-                    </div>
-                    <div class="back-card">
-                        Informações adicionais sobre o vídeo
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        
-
-        
-        
-        
-    </div> 
-
-    <div class="caixa-00">
-        <h1>Design Graphics</h1>
-    
-        <div class="caixa-tudo">
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>MegaBets</h1>
-                        <img src="./img/aposta.jpg" alt="">
-                    </div>
-                    <div class="back-card">
-                        <h1>Tools: Photoshop</h1>
-                        <p>I had the pleasure of working with a client from brazil who owns a betting company, creating
-                            graphic designs that capture the fun and energy of their business. The project involved
-                            developing a cohesive visual identity.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Beaty Salon</h1>
-                        <img src="./img/salao.png" alt="">
-                    </div>
-                    <div class="back-card">
-                        <h1>Tools: Photoshop</h1>
-                        <p>I had the pleasure of working with a client from brazil who owns a betting company, creating
-                            graphic designs that capture the fun and energy of their business. The project involved
-                            developing a cohesive visual identity.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>Partrike</h1>
-                        <img src="./img/voodeparatrike.jpg" alt="">
-                    </div>
-                    <div class="back-card">
-                        <h1>Tools: Photoshop</h1>
-                        <p>I had the pleasure of working with a client from brazil who owns a betting company, creating
-                            graphic designs that capture the fun and energy of their business. The project involved
-                            developing a cohesive visual identity.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="caixa">
-                <div class="flip-container">
-                    <div class="card-01">
-                        <h1>MegaBets</h1>
-                        Soming soon
-                    </div>
-                    <div class="back-card">
-                        <h1>Tools: Photoshop</h1>
-                        <p>I had the pleasure of working with a client from brazil who owns a betting company, creating
-                            graphic designs that capture the fun and energy of their business. The project involved
-                            developing a cohesive visual identity.</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-    </div>
-           
-
-        
-   
-
-
-</div>-->
