@@ -51,3 +51,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+
+
+  //menu
+
+  const menu = document.getElementById('menu');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      // Se o usuário der scroll para baixo (não está no topo)
+      menu.style.top = '0'; // Exibe o menu
+    } else {
+      // Se o usuário voltar ao topo da página
+      menu.style.top = '-80px'; // Esconde o menu
+    }
+  });
+  
+
+  //menu
