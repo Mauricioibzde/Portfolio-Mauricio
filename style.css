@@ -1002,6 +1002,10 @@ display: flex;
     padding: 3rem;
     font-size: 1.5rem;
 }
+    .info-biografia {
+  padding: 1rem;
+  max-width: 90%;
+}
 }
 
         
