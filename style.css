@@ -164,10 +164,9 @@ header {
   height: 80px;
   align-items: center;
   position: fixed;
-  background: linear-gradient(to bottom, #000000, rgb(1, 11, 27));
+  background: linear-gradient(to top, #241c44, #000000);
   z-index: 2;
-  top: -80px; /* Menu fica oculto inicialmente */
-  transition: top 0.3s ease-in-out; /* Suave transição */
+
 }
 
 .menu-header ul {
@@ -197,26 +196,16 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(./img/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius:  0%  0% 60% 60%;
-  box-shadow: 0 20px 50px #30189176;
-   
- 
 
- 
-  
 
 }
 
 
 
 .content-01 img {
-  width: 45rem;
+  width: 100rem;
   position: absolute;
-  border-radius: 800px  400px ;
+  border-radius: 800px  10px ;
   box-shadow: 0 20px 50px #761de3;
  background-color: #fafafaf0;
 
