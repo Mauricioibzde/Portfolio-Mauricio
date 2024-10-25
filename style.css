@@ -11,7 +11,8 @@ html, body {
   margin: 0; 
   padding: 0; 
   color: white;
-  background-color: #000000;
+  background-color: #241c44;
+
   scroll-behavior: smooth;
   
 }
@@ -57,7 +58,7 @@ h1 {
   right: -1000px; /* Posiciona o menu fora da tela à direita */
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, #9000f0, rgba(0, 0, 0, 0.968));
+  background: linear-gradient(to bottom, #241c44, #000000f7);
   box-shadow: -2px 0 5px rgba(0,0,0,0.5);
   transition: right 0.3s ease; /* Suaviza a transição do menu */
   z-index: 3; /* Garante que o menu fique acima do conteúdo principal */
@@ -114,7 +115,7 @@ header {
   height: 80px; 
   align-items:center ;
   position: fixed;
-  background-color: #131220;
+  background: linear-gradient(to bottom, #241c44, #000000);
   z-index: 2;
  
   
@@ -163,7 +164,7 @@ header {
   height: 80px;
   align-items: center;
   position: fixed;
-  background: linear-gradient(to top, #000000, #000000);
+  background: linear-gradient(to bottom, #000000, rgb(1, 11, 27));
   z-index: 2;
   top: -80px; /* Menu fica oculto inicialmente */
   transition: top 0.3s ease-in-out; /* Suave transição */
@@ -196,19 +197,26 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius:  0%  0% 60% 60%;
+  box-shadow: 0 20px 50px #30189176;
+   
+ 
+
+ 
   
 
 }
 
-.background-video {
-  width: 100%;
- 
-}
+
 
 .content-01 img {
   width: 45rem;
   position: absolute;
-  border-radius: 500px  10px ;
+  border-radius: 800px  400px ;
   box-shadow: 0 20px 50px #761de3;
  background-color: #fafafaf0;
 
@@ -249,6 +257,9 @@ header {
   align-items: center;
   text-align: center;
   width: 100%;
+  background: linear-gradient(to bottom, #241c44, #000000f7);
+  position: relative;
+  top: 60px;
   
 }
 
@@ -258,7 +269,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #000000, rgba(1, 11, 27, 0.103));
+ 
   margin: 20rem 0rem;
   position: relative;
   
@@ -288,7 +299,7 @@ header {
 .content-03 {
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #4600a8af, #6604d659);
+  background: linear-gradient(to bottom, #241c44, #000000f7);
 
   width: 100%;
   
@@ -334,7 +345,7 @@ flex-flow: column nowrap;
 display: flex;
 justify-content: center;
 align-items: center;
-background: linear-gradient(to bottom, #000000, rgba(1, 11, 27, 0.103));
+background: linear-gradient(to bottom, #382487, #000000f7);
 scroll-snap-align: center;
 }
 
@@ -390,7 +401,7 @@ main {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background: linear-gradient(to bottom, #181818, rgba(0, 12, 30, 0.404));
+  background: linear-gradient(to bottom, #241c44, #000000f7);
   color: rgb(91, 91, 91);
 }
 
@@ -411,7 +422,7 @@ main {
 
 /* Style the back side */
 .flip-card-back {
-  background: linear-gradient(to bottom, #181818, rgba(0, 12, 30, 0.404));
+  background: linear-gradient(to bottom, #241c44, #000000f7);
   color: white;
   transform: rotateY(180deg);
 }
@@ -467,7 +478,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #9000f0b9, rgba(146, 160, 183, 0.082));
+  background: linear-gradient(to bottom, #241c44, #000000f7);
   scroll-snap-align: center;
   border-radius: 1rem;
 
@@ -526,14 +537,14 @@ font-size: 2rem;
 /*btn*/
 
 .animated-button {
-  background: linear-gradient(-30deg, #120b3d 50%, #130b87 50%);
+  background: linear-gradient(to bottom, #241c44, #000000f7);
   padding: 10px 20px;
   margin: 12px;
   display: inline-block;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   overflow: hidden;
-  color: #f7d4d4;
+  color: #ffffff;
   font-size: 20px;
   letter-spacing: 2.5px;
   text-align: center;
@@ -555,7 +566,7 @@ top: 0px;
 left: 0px;
 width: 100%;
 height: 100%;
-background-color: #432b98;
+background: linear-gradient(to bottom, #241c44, #000000f7);
 opacity: 0;
 -webkit-transition: .2s opacity ease-in-out;
 transition: .2s opacity ease-in-out;
@@ -681,9 +692,9 @@ display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to left, #00a4f03f, rgba(146, 160, 183, 0.082));
+  background-color: #241c44;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 1px rgb(255, 255, 255);
   text-align: center;
   width: 4rem;
   height: 6rem;
@@ -809,7 +820,7 @@ display: flex;
     footer {
         position: relative;
         top: 5rem;
-        background: linear-gradient(to bottom, #9000f0b9, rgba(146, 160, 183, 0.082));
+        background: linear-gradient(to bottom, #241c44, #000000f7);
         color: rgb(255, 255, 255);
         padding: 20px 0;
     }
